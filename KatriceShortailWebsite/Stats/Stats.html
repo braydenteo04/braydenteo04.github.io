@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js" defer></script>
+        <title>Katrice Shortail's stats</title>
+    </head>
+    <body>
+        <div id = wholeScreen></div>
+
+        <div id = fallBar></div>
+        <div id = naviBar>
+        <button id = "logo"></button>
+        <script type="text/javascript">
+            button0 = document.getElementById("logo")
+            fallBar = document.getElementById("fallBar")
+            naviBar = document.getElementById("naviBar") 
+            button0.onclick = function () {
+                naviBar.style.animation = "naviBarRotate 1s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarSlide 1s ease-in 0s 1 forwards";
+                    fallBar.style.animation = "fallBarSlide 1s ease-in 0s 1 forwards";
+                    fallBar.style.opacity = 1;
+                },1000);
+                
+                setTimeout(function(){
+                    location.href = "..\\homepage\\homepage.html";
+                },2000);
+            };
+        </script>
+
+        <button id = "homepage"></button>
+        <script type="text/javascript">
+            button1 = document.getElementById("homepage")
+            fallBar = document.getElementById("fallBar")
+            naviBar = document.getElementById("naviBar") 
+            button1.onclick = function () {
+                naviBar.style.animation = "naviBarRotate 1s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarSlide 1s ease-in 0s 1 forwards";
+                    fallBar.style.animation = "fallBarSlide 1s ease-in 0s 1 forwards";
+                    fallBar.style.opacity = 1;
+                },1000);
+                
+                setTimeout(function(){
+                    location.href = "..\\homepage\\homepage.html";
+                },2000);
+            };
+        </script>
+
+        <div id = aboutMeFallBar></div>
+        <button id = "aboutMe"></button>
+        <script type="text/javascript">
+            button1 = document.getElementById("aboutMe")
+            aboutMeFallBar = document.getElementById("aboutMeFallBar")
+            button1.onclick = function () {
+                aboutMeFallBar.style.top = 0;
+                aboutMeFallBar.style.animation = "aboutMeExpand 1s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    aboutMeFallBar.style.animation = "aboutMeSlideDown 1s ease-in 0s 1 forwards";
+                },1000);
+                setTimeout(function(){
+                    location.href = "..\\aboutMe\\aboutMe.html";
+                },2000);
+            };
+        </script>
+
+        <div id = storiesFallBar></div>
+        <button id = "MyStories"></button>
+        <script type="text/javascript">
+            button2 = document.getElementById("MyStories")
+            storiesFallBar = document.getElementById("storiesFallBar")
+            button2.onclick = function () {
+                storiesFallBar.style.top = 0;
+                storiesFallBar.style.animation = "storiesExpand 1s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    storiesFallBar.style.animation = "storiesSlideDown 1s ease-in 0s 1 forwards";
+                },1000);
+                setTimeout(function(){
+                    location.href = "..\\DailyLife\\DailyLife.html";
+                },2000);
+            };
+        </script>
+        </div>
+
+
+
+        <p id = "disclaimer"> This data is accurate as of 26/4/2022 </p><br>
+        <img src = "images\Stats2.png" alt = "Stats" id = "Stats" class = "right">
+        <img src = "images\ProfileTable.png" alt = "profile" id = "profile" class = "left">
+        <img src = "images\AttributesTable.png" alt = "attributes" id = "attributes" class = "right">
+        <img src = "images\ClassesTable.png" alt = "jobs1" id = "jobs1" class = "left">
+        <img src = "images\ClassesTable2.png" alt = "jobs2" id = "jobs2" class = "right">
+
+        <div id = block></div>
+    </body>
+</html>

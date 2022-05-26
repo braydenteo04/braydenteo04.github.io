@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js" defer></script>
+        <title>Katrice Shortail's Introduction</title>
+    </head>
+    <body>
+        <div id = wholeScreen></div>
+        <div id = fallBar></div>
+        <div id = naviBar>
+        <button id = "logo"></button>
+        <script type="text/javascript">
+            button0 = document.getElementById("logo")
+            fallBar = document.getElementById("fallBar")
+            naviBar = document.getElementById("naviBar") 
+            button0.onclick = function () {
+                button1 = document.getElementById("homepage")
+                button2 = document.getElementById("Stats")
+                button3 = document.getElementById("MyStories")
+                fallBar.style.animation = "fallBarFall 1s ease-in 0s 1 forwards";
+                naviBar.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button0.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button1.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button2.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button3.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                fallBar.style.opacity = 1;
+                naviBar.style.opacity = 1;
+                setTimeout(function(){
+                    location.href = "..\\homepage\\homepage.html";
+                },1000);
+            };
+        </script>
+
+        <button id = "homepage"></button>
+        <script type="text/javascript">
+            button1 = document.getElementById("homepage")
+            fallBar = document.getElementById("fallBar")
+            naviBar = document.getElementById("naviBar") 
+            button1.onclick = function () {
+                button0 = document.getElementById("logo")
+                button1 = document.getElementById("homepage")
+                button2 = document.getElementById("Stats")
+                button3 = document.getElementById("MyStories")
+                fallBar.style.animation = "fallBarFall 1s ease-in 0s 1 forwards";
+                naviBar.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button0.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button1.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button2.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                button3.style.animation = "naviBarFall 1s ease-in 0s 1 forwards";
+                fallBar.style.opacity = 1;
+                naviBar.style.opacity = 1;
+                setTimeout(function(){
+                    location.href = "..\\homepage\\homepage.html";
+                },1000);
+            };
+        </script>
+
+        <div id = statsFallBar></div>
+        <button id = "Stats"></button>
+        <script type="text/javascript">
+            button1 = document.getElementById("Stats")
+            statsfallBar = document.getElementById("statsFallBar")
+            button1.onclick = function () {
+                statsfallBar.style.animation = "statsBarDrop 0.5s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    statsfallBar.style.top = 0;
+                    statsfallBar.style.animation = "statsBarExpand 0.5s ease-in 0s 1 forwards";
+                },500);
+                setTimeout(function(){
+                    location.href = "..\\Stats\\Stats.html";
+                },1000);
+            };
+        </script>
+
+        <div id = storiesFallBar></div>
+        <button id = "MyStories"></button>
+        <script type="text/javascript">
+            button1 = document.getElementById("MyStories")
+            storiesFallBar = document.getElementById("storiesFallBar")
+            button1.onclick = function () {
+                storiesFallBar.style.animation = "storiesFallBarDrop 0.5s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    storiesFallBar.style.top = 0;
+                    storiesFallBar.style.animation = "storiesFallBarExpand 0.5s ease-in 0s 1 forwards";
+                },500);
+                setTimeout(function(){
+                    location.href = "..\\DailyLife\\DailyLife.html";
+                },1000);
+            };
+        </script>
+        </div>
+        <img src = "images\Introduction.png" alt = "introduction" id = "introduction">
+        <img src = "images\WhatDoIdo.png" alt = "whatdoido" id = "whatdoido">
+        <img src = "images\dailies.png" alt = "dailies" id = "dailies">
+
+        <img src = "images\jobs.png" alt = "jobs"  id = "jobs">
+        <img src = "images\DRKtitle.png" alt = "DRKtitle"  id = "DRKtitle">
+        <img src = "images\DarkKnight.gif" alt = "DRK"  id = "DRK">
+        <img src = "images\SGEtitle.png" alt = "SGEtitle"  id = "SGEtitle">
+        <img src = "images\SGE.gif" alt = "SGE"  id = "SGE">
+        <img src = "images\RPRtitle.png" alt = "RPRtitle"  id = "RPRtitle">
+        <img src = "images\RPR.gif" alt = "RPR"  id = "RPR">
+
+        <img src = "images\placesI'veBeento.png" alt = "places"  id = "places">
+        <img src = "images\moon.png" alt = "moon"  id = "moon">
+        <img src = "images\EdgeOfUniverse.png" alt = "EdgeOfUniverse"  id = "EdgeOfUniverse">
+        <img src = "images\place3.png" alt = "Place3"  id = "Place3">
+        <img src = "images\place4.png" alt = "Place3"  id = "Place4">
+
+        <img src = "images\friends.png" alt = "friends"  id = "friends">
+        <img src = "images\friend1.png" alt = "friend1"  id = "friend1">
+        <img src = "images\friend2.png" alt = "friend2"  id = "friend2">
+        <img src = "images\friends(Iswear)3.png" alt = "friends(Iswear)3"  id = "friend3">
+        <img src = "images\friend4.png" alt = "friend4"  id = "friend4">
+
+        <img src = "images\conclusion.png" alt = "conclusion"  id = "conclusion">
+    </body>
+</html>

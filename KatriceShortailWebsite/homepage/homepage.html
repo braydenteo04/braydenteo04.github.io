@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js"></script>
+        <title>Katrice Shortail's Homepage</title>
+    </head>
+    <body id = "body">
+        <img src = "images\corner.png" alt = "corner" id = "corner">
+        <img src = "images\corner2.png" alt = "corner2" id = "corner2">
+        <img src = "images\title.png" alt = "title image 1" id = "title">
+        <img src = "images\title2.png" alt = "title image 2" id = "title2">
+        <img src = "images\lean.png" alt = "katrice leaning" id = "lean">
+        <img src = "images\stars.png" alt = "kirakira" id = "stars">
+        
+        <p id = "madeBy"> Made by Brayden Teo </p>
+        <button type = "button" id = "aboutMe"></button>
+        <span id="dot1"></span>
+        <script type="text/javascript">
+            button1 = document.getElementById("aboutMe")
+            dot1 = document.getElementById("dot1")
+            button1.onclick = function () {
+                dot1.style.animation = "dot1Expand 1s ease-out 0s 1 forwards ";
+                dot1.style.opacity = 1;
+                dot1.style.zIndex = 4;
+
+                setTimeout(function(){
+                    location.href = "..\\aboutMe\\aboutMe.html";
+                },1000);
+            };
+        </script>
+
+        <button type = "button" id = "statsButton"></button>
+        <span id="dot2"></span>
+        <script type="text/javascript">
+            button2 = document.getElementById("statsButton")
+            dot2 = document.getElementById("dot2")
+            button2.onclick = function () {
+                dot2.style.animation = "dot2Expand 1s ease-out 0s 1 forwards";
+                dot2.style.opacity = 1;
+                dot2.style.zIndex = 4;
+
+                setTimeout(function(){
+                    location.href = "..\\Stats\\Stats.html";
+                },1000);
+            };
+        </script>
+
+        <button type = "button" id = "dailyLife"></button>
+        <span id="dot3"></span>
+        <script type="text/javascript">
+            button3 = document.getElementById("dailyLife")
+            dot3 = document.getElementById("dot3")
+            button3.onclick = function () {
+                dot3.style.animation = "dot3Expand 1s ease-out 0s 1 forwards ";
+                dot3.style.opacity = 1;
+                dot3.style.zIndex = 4;
+
+                setTimeout(function(){
+                    location.href = "..\\DailyLife\\DailyLife.html";
+                },1000);
+            };
+        </script>
+    </body>
+</html>

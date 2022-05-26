@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="script.js" defer></script>
+        <title>Katrice Shortail's Stories</title>
+    </head>
+    <body>
+        <div id = wholeScreen></div>
+
+        <div id = fallBar></div>
+        <div id = naviBar>
+        <button id = "logo"></button>
+        <script type="text/javascript">
+            button0 = document.getElementById("logo")
+            fallBar = document.getElementById("fallBar")
+            naviBar = document.getElementById("naviBar")
+            button0.onclick = function () {
+                naviBar.style.animation = "naviBarDropRotate 0.5s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarDrop 0.5s ease-in 0s 1 forwards";
+                },500);
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarBounce1 0.25s ease-out 0s 1 forwards";
+                },1000);
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarBounce2 0.25s ease-in 0s 1 forwards";
+                },1250);
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarRaise 1s ease-in 0s 1 forwards";
+                    fallBar.style.animation = "fallBarRaise 1s ease-in 0s 1 forwards";
+                },1500);
+                setTimeout(function(){
+                    location.href = "..\\homepage\\homepage.html";
+                },2500);
+            };
+        </script>
+
+        <button id = "homepage"></button>
+        <script type="text/javascript">
+            button1 = document.getElementById("homepage")
+            fallBar = document.getElementById("fallBar")
+            naviBar = document.getElementById("naviBar") 
+            button1.onclick = function () {
+                naviBar.style.animation = "naviBarDropRotate 0.5s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarDrop 0.5s ease-in 0s 1 forwards";
+                },500);
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarBounce1 0.25s ease-out 0s 1 forwards";
+                },1000);
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarBounce2 0.25s ease-in 0s 1 forwards";
+                },1250);
+                setTimeout(function(){
+                    naviBar.style.animation = "naviBarRaise 1s ease-in 0s 1 forwards";
+                    fallBar.style.animation = "fallBarRaise 1s ease-in 0s 1 forwards";
+                },1500);
+                setTimeout(function(){
+                    location.href = "..\\homepage\\homepage.html";
+                },2500);
+            };
+        </script>
+
+        <div id = aboutMeSection></div>
+        <div id = aboutMeFallBar></div>
+        <div id = aboutMeLeftBar1></div>
+        <div id = aboutMeLeftBar2></div>
+        <div id = aboutMeRightBar1></div>
+        <div id = aboutMeRightBar2></div>
+        <button id = "aboutMe"></button>
+        
+        <script type="text/javascript">
+            button2 = document.getElementById("aboutMe")
+            aboutMeSection = document.getElementById("aboutMeSection")
+            aboutMeFallBar = document.getElementById("aboutMeFallBar")
+
+            aboutMeLeftBar1 = document.getElementById("aboutMeLeftBar1")
+            aboutMeLeftBar2 = document.getElementById("aboutMeLeftBar2")
+            aboutMeRightBar1 = document.getElementById("aboutMeRightBar1")
+            aboutMeRightBar2 = document.getElementById("aboutMeRightBar2")
+            button2.onclick = function () {
+                aboutMeFallBar.style.opacity = 1;
+                aboutMeLeftBar1.style.opacity = 1;
+                aboutMeLeftBar2.style.opacity = 1;
+                aboutMeRightBar1.style.opacity = 1;
+                aboutMeRightBar2.style.opacity = 1;
+
+                button2.style.animation = "aboutMeFall 1s ease-in 0s 1 forwards";
+                aboutMeSection.style.animation = "aboutMeFallSection 1s ease-in 0s 1 forwards";
+                aboutMeFallBar.style.animation = "aboutMeFallBarFall 1s ease-in 0s 1 forwards";
+
+                aboutMeLeftBar1.style.animation = "aboutMeLeftBarFall1 1s ease-in 0s 1 forwards";
+                aboutMeLeftBar2.style.animation = "aboutMeLeftBarFall2 1s ease-in 0s 1 forwards";
+                aboutMeRightBar1.style.animation = "aboutMeRightBarFall1 1s ease-in 0s 1 forwards";
+                aboutMeRightBar2.style.animation = "aboutMeRightBarFall2 1s ease-in 0s 1 forwards";
+                setTimeout(function(){
+                    aboutMeLeftBar1.style.animation = "aboutMeLeftBarSlide1 0.5s ease-in-out 0s 1 forwards";
+                    aboutMeLeftBar2.style.animation = "aboutMeLeftBarSlide2 0.5s ease-in-out 0s 1 forwards";
+                    aboutMeRightBar1.style.animation = "aboutMeRightBarSlide1 0.5s ease-in-out 0s 1 forwards";
+                    aboutMeRightBar2.style.animation = "aboutMeRightBarSlide2 0.5s ease-in-out 0s 1 forwards";
+                },1000);
+                setTimeout(function(){
+                    aboutMeLeftBar1.style.animation = "aboutMeLeftBarFinish1 0.5s ease-in-out 0s 1 forwards";
+                    aboutMeLeftBar2.style.animation = "aboutMeLeftBarFinish2 0.5s ease-in-out 0s 1 forwards";
+                    aboutMeRightBar1.style.animation = "aboutMeRightBarFinish1 0.5s ease-in-out 0s 1 forwards";
+                    aboutMeRightBar2.style.animation = "aboutMeRightBarFinish2 0.5s ease-in-out 0s 1 forwards";
+                },1500);
+                setTimeout(function(){
+                    location.href = "..\\aboutMe\\aboutMe.html";
+                },2000);
+            };
+        </script>
+
+        <div id = statsFallBar></div>
+        <button id = "stats"></button>
+        <script type="text/javascript">
+            button3 = document.getElementById("stats")
+            statsFallBar = document.getElementById("statsFallBar")
+            naviBar = document.getElementById("naviBar")
+            button3.onclick = function () {
+                statsFallBar.style.opacity = 1;
+                statsFallBar.style.height = "10000%";
+                statsFallBar.style.top = "-10000%";
+
+                naviBar.style.animation = "statsNaviBarRotateDrop 0.5s ease-in 0s 1 forwards";
+
+                setTimeout(function(){
+                    naviBar.style.animation = "statsNaviBarFall 0.5s ease-in 0s 1 forwards";
+                },500);
+                setTimeout(function(){
+                    naviBar.style.animation = "statsNaviBarBounce1 0.75s ease-out 0s 1 forwards";
+                },1000);
+                setTimeout(function(){
+                    naviBar.style.animation = "statsNaviBarBounce2 0.5s ease-in 0s 1 forwards";
+                },1750);
+                setTimeout(function(){
+                    location.href = "..\\Stats\\Stats.html";
+                },2250);
+            };
+        </script>
+        </div>
+        
+        <img src = "images/Stories.png" alt = "stories" id = "stories" class = "stories">
+        <img src = "images/stars.png" alt = "kirakira" id = "stars" class = "right">
+        <img src = "images/story1.png" alt = "story1" id = "story1" class = "left">
+        <img src = "images/story2.png" alt = "story2" id = "story2" class = "right">
+        <img src = "images/story3.png" alt = "story3" id = "story3" class = "left">
+        <img src = "images/story4.png" alt = "story4" id = "story4" class = "right">
+        <img src = "images/story5.png" alt = "story5" id = "story5" class = "left">
+        <img src = "images/story6.png" alt = "story6" id = "story6" class = "right">
+        <img src = "images/story7.png" alt = "story7" id = "story7" class = "left">
+        <img src = "images/story8.png" alt = "story8" id = "story8" class = "right">
+        <img src = "images/story9.png" alt = "story9" id = "story9" class = "left">
+        <img src = "images/story10.png" alt = "story10" id = "story10" class = "right">
+        <img src = "images/Conlusion.png" alt = "conclusion" id = "conclusion" class = "left">
+
+        <div id = "rectangle"></div>
+    </body>
+</html>

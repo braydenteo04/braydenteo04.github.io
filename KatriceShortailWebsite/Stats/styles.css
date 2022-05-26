@@ -1,0 +1,329 @@
+@font-face{
+    font-family: base_font;
+    src: url("..\\CuteBubble.otf");
+}
+@keyframes navibarFadeIn {
+    0% {top: -100%; opacity:0;}
+    100% {top: 0%; opacity:1;}
+}
+@keyframes fallBarSlide{
+    0% {left: 100%; opacity:1;}
+    100% {left: 0%; opacity:1;}
+}
+@keyframes naviBarRotate{
+    0%{left: 0%; transform: rotate(0deg); opacity:1;}
+    100% {left: 50%; transform: rotate(90deg) translate(0%, 50%);; opacity:1;}
+}
+@keyframes naviBarSlide{
+    0% {left: 50%; transform: rotate(90deg) translate(0%, 50%);}
+    100% {left: -50%; transform: rotate(90deg) translate(0%, 50%);}
+}
+
+@keyframes leftEnter{
+    0% {margin-left: 0; margin-right: auto; transform: translate(-50%, 0); opacity: 0;}
+    100% {margin-left: 50%; margin-right: auto; transform: translate(-50%, 0); opacity: 1;}
+}
+
+@keyframes rightEnter{
+    0% {margin-left: 100%; margin-right: auto; transform: translate(-50%, 0); opacity: 0;}
+    100% {margin-left: 50%; margin-right: auto; transform: translate(-50%, 0); opacity: 1;}
+}
+
+@keyframes fadeBackground {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@keyframes aboutMeExpand{
+    0% {width:0px; opacity: 100%;}
+    100% {width:150%; opacity: 100%;}
+}
+
+@keyframes aboutMeSlideDown{
+    0% {width:150%; opacity: 100%; height: 75px;}
+    100% {width:150%; opacity: 100%; height: 150%}
+}
+
+@keyframes storiesExpand{
+    0% {width:0px; opacity: 100%;}
+    100% {width:200%; opacity: 100%;}
+}
+
+@keyframes storiesSlideDown{
+    0% {width:200%; opacity: 100%; height: 75px;}
+    100% {width:200%; opacity: 100%; height: 150%}
+}
+
+#aboutMeFallBar{
+    position: fixed;
+    opacity: 0;
+    top: -100%;
+    left: 55%;
+    width:250px;
+    height:75px;
+    transform: translate(-50%, 0%);
+    background-color:rgb(255, 201, 250);
+    border-bottom: 11px;
+    border-bottom-style:solid;
+    border-bottom-color: rgb(255, 201, 250);
+    z-index: 12;
+}
+
+
+#storiesFallBar{
+    position: fixed;
+    opacity: 0;
+    top: -100%;
+    left: 80%;
+    width:250px;
+    height:75px;
+    transform: translate(-50%, 0%);
+    background-color:rgb(131, 255, 189);
+    border-bottom: 11px;
+    border-bottom-style:solid;
+    border-bottom-color: rgb(131, 255, 189);
+    z-index: 12;
+}
+
+
+#wholeScreen{
+    position: fixed;
+    opacity: 1;
+    top: 0%;
+    width:100%;
+    height:100%;
+    background-color:rgb(144, 199, 255);
+    z-index: 12;
+
+    animation-name: fadeBackground;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+body{
+    margin: 0%;
+    font-family: base_font;
+    background-color: rgb(144, 199, 255);
+
+    background-image: url("images\\homepageBG.png");
+    background-size: cover;
+    background-repeat: repeat;
+
+    overflow-x: hidden;
+}
+#fallBar{
+    position: fixed;
+    opacity: 1;
+    top: 0%;
+    left: 100%;
+    width:100%;
+    height:100%;
+    background-color:rgb(255, 119, 119);
+    z-index: 11;
+}
+
+#naviBar{
+    position: fixed;
+    top: 0;
+    width:100%;
+    height:75px;
+    background-color:rgb(255, 119, 119);
+    border-bottom: 10px;
+    border-bottom-style:solid;
+    border-bottom-color: rgb(255, 92, 92);
+
+    background-image: url("images\\homepageBG.png");
+    background-size: contain;
+    background-repeat: repeat;
+
+    animation-name: navibarFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    z-index: 10;
+}
+button{
+    height: 125px;
+    width: 250px;
+    top:0;
+    font-family: base_font;
+    color:rgb(255, 120, 143);
+    font-size: 28px;
+    background-color:  rgba(255, 255, 255, 0);
+    border-style: none;
+    z-index: 2;
+}
+button:hover {
+    height: 125px;
+    width: 250px;
+    font-family: base_font;
+    color:rgb(255, 177, 177);
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    z-index: 2;
+}
+
+#logo{
+    position: fixed;
+    left: 3%;
+    top: 0;
+    max-height: 75px;
+    background-image: url("images\\Title.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation-name: navibarFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#logo:hover {
+    background-image: url("images\\Title2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#homepage{
+    position: fixed;
+    left: 30%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    max-height: 75px;
+    background-image: url("images\\Homepage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation-name: navibarFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#homepage:hover {
+    background-image: url("images\\Homepage2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#aboutMe{
+    position: fixed;
+    left: 55%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    max-height: 75px;
+    background-image: url("images\\AboutMe.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation-name: navibarFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#aboutMe:hover {
+    background-image: url("images\\AboutMe2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#MyStories{
+    position: fixed;
+    left: 80%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    background-image: url("images\\MyStories.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 75px;
+
+    animation-name: navibarFadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#MyStories:hover {
+    background-image: url("images\\MyStories2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#disclaimer{
+    position: fixed;
+    bottom: 0%;
+    right: 1%;
+}
+
+#Stats{
+    position: absolute;
+    top: 90px;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+#profile{
+    position: absolute;
+    top: 800px;
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+#attributes{
+    position: absolute;
+    top: 1200px;
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+#jobs1{
+    position: absolute;
+    top: 1900px;
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+#jobs2{
+    position: absolute;
+    top: 2550px;
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    transform: translate(-50%, 0);
+    opacity: 0;
+}
+
+#block{
+    position: absolute;
+    top: 2900px;
+    width:100%;
+    height:75px;
+    background-color:rgb(255, 119, 119);
+    opacity: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.leftAnimate{
+    animation: leftEnter 2s 1 forwards;
+}
+
+.rightAnimate{
+    animation: rightEnter 2s 1 forwards;
+}
